@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iNaturalist Streak</title>
+
+  <style>
+    td {
+      min-width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Find your longest iNaturalist observation streaks</h1>
+  <input id="username" placeholder="iNaturalist username">
+  <button onclick="getStreak()">Go</button>
+
+  <div id="table"></div>
+
+  <script src="lib/lodash.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
