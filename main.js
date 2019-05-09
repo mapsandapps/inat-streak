@@ -69,6 +69,10 @@ function requestHistogram(username) {
     .then(function(respJSON) {
       processHistogram(respJSON)
     })
+    .catch(function(error) {
+      var tableElement = document.getElementById('table')
+      tableElement.outerHTML = '<div id="table">An error occurred.</div>'
+    })
 }
 
 function getStreak() {
