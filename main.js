@@ -62,7 +62,7 @@ function processHistogram(histogram) {
 }
 
 function requestHistogram(username) {
-  fetch(`https://api.inaturalist.org/v1/observations/histogram?user_id=${username}&interval=day&d1=1900-01-01`)
+  fetch(`https://api.inaturalist.org/v1/observations/histogram?user_id=${username.toLowerCase()}&interval=day&d1=1900-01-01`)
     .then(function(resp) {
       return resp.json()
     })
